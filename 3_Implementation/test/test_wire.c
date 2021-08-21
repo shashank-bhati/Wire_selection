@@ -17,7 +17,7 @@ void setUp(){}
 void tearDown(){}
 
 /// Prototypes for all the test functions 
-void test_Load_current(void);
+void test_load_current(void);
 
 
 
@@ -29,7 +29,7 @@ void test_Load_current(void);
  */
 
 
-void test_power_input(void) 
+void test_load_current(void) 
 {
   TEST_ASSERT_EQUAL(11,load_current(2420,220));
   //help to check the input power is the machine
@@ -43,7 +43,7 @@ int main()
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_Load_current);
+  RUN_TEST(test_load_current);
   
  
 
