@@ -1,8 +1,7 @@
 PROJ_NAME = Wire_selection
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-SRC = src/.c\
-src/Title.c\
+SRC = src/Title.c\
 src/Load_current.c\
 src/Factor_s.c\
 src/Wire_selection.c\
