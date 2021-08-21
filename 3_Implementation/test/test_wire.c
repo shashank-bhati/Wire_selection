@@ -1,5 +1,5 @@
 /**
- * @file test_para.c
+ * @file test_wire.c
  * @author Shashank Bhati
  * @brief For the testing of the every functon paramters taken into account.
  * @version 0.1
