@@ -1,21 +1,17 @@
-PROJ_NAME = Machine_parameter
+PROJ_NAME = Wire_selection
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-SRC = src/freq.c\
-src/login.c\
-src/parameter.c\
-src/power_input.c\
-src/power_output.c\
-src/resistance.c\
-src/secondary_turns.c\
-src/speed.c\
-src/torque.c\
+SRC = src/.c\
+src/Title.c\
+src/Load_current.c\
+src/Factor_s.c\
+src/Wire_selection.c\
 
 
 
-COV_SRC = test/test_para.c
+COV_SRC = test/test_wire.c
 
-TEST_SRC = test/test_para.c \
+TEST_SRC = test/test_wire.c \
 unity/unity.c 
 INC_H = inc
 INC_T = unity
@@ -46,7 +42,7 @@ test:
 
 coverage:
 	cp test/test_para.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test/test_para.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test/test_wire.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
 	$(RM) *.$(EXEC)
