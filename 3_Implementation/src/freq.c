@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "../inc/para.h"
-int freq(int N_turns,int current)
-{ 
+#include "../inc/wire.h"
+int load_current(int power,int voltage)
 
-   int freq = N_turns * current;
-   result = freq;
-   return result;
+{
+       int Load_current = (power/voltage);
+       return Load_current;
 }
+
