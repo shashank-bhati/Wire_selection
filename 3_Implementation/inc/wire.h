@@ -1,5 +1,5 @@
 /**
- * @file para.h
+ * @file wire.h
  * @author Shashank
  * @brief contains all the headers required.
  * @version 0.1
@@ -8,27 +8,20 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef __PARA_H__
-#define __PARA_H__
-int result;
+#ifndef __WIRE_H__
+#define __WIRE_H__
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 //# include <stdio_ext.h> //not supported by the vcode command line
 
 //# include <conio.h> //not supported by the linux command line
 
 //# include <dos.h> //not supported by the linux command line
-void Welcome_screen(void);
-void Title(void);
-void login_screen(void);
-int Parameter_s();
-int power_input();
-int power_output();
-int resistance();
-int freq();
-int speed();
-int torque();
-int secondary_turns();
+void Title();
+void Factor_s();
+int Wire_selection();
+int load_current();
 
-#endif  /* #define __PARA_H__ */
+#endif  /* #define __WIRE_H__ */
